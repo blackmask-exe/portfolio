@@ -1,0 +1,33 @@
+temporary copy paste here
+
+<div class="projects-grid grid--3-cols">
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>
+            <div class="project-item projects-border">
+              <a href="#" class="projects-link">
+                <img src="imgs/projects/nalla.png" alt="nallaboy"
+              /></a>
+            </div>

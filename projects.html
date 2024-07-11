@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="general.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+
+    <script defer src="buttontoggle.js"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bghero">
+      <header class="navigation-section">
+        <div class="navigation">
+          <div class="nav-logo">
+            <img src="imgs/logo.png" alt="my logo" />
+          </div>
+
+          <div class="nav-elements">
+            <a href="#linkaboutme" class="navitem">About</a>
+            <a href="/projects.html" class="navitem">Projects</a>
+            <a href="#" class="navitem">Contact</a>
+          </div>
+        </div>
+      </header>
+
+      <div class="projects-section">
+        <div class="projects container">
+          <div class="projects-heading ht2" id="linkprojects">my projects</div>
+        </div>
+
+        <div class="projects-z grid--2-cols container">
+          <div class="project-item project-img">
+            <img
+              src="/imgs/projects/Window-layout.svg"
+              class="project-img-elem"
+            />
+          </div>
+
+          <div class="project-item project-txt projl">
+            <div class="project-button">
+              <button class="button-proj1 button-proj">
+                <ion-icon class="project-button-icon" name="play"></ion-icon>
+              </button>
+              <p class="text-project-button">
+                Press to execute project1.script
+              </p>
+            </div>
+            <div class="autotype-one">
+              <p class="autotype-elem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                et!
+              </p>
+            </div>
+          </div>
+
+          <div class="project-item project-txt projr">
+            <div class="project-button">
+              <button class="button-proj2 button-proj" onclick="myFunction()">
+                <ion-icon class="project-button-icon" name="play"></ion-icon>
+              </button>
+              <p class="text-project-button">
+                Press to execute project1.script
+              </p>
+            </div>
+            <div class="autotype-one" id="pro1">
+              <p class="autotype-elem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                et!
+              </p>
+            </div>
+          </div>
+
+          <script>
+            function myFunction() {
+              var x = document.getElementById("pro1");
+              if (x.style.display === "none") {
+                x.style.display = "block";
+              } else {
+                x.style.display = "none";
+              }
+            }
+          </script>
+
+          <div class="project-item project-img">
+            <img
+              src="/imgs/projects/Window-layout.svg"
+              class="project-img-elem"
+            />
+          </div>
+
+          <div class="project-item project-img">
+            <img
+              src="/imgs/projects/Window-layout.svg"
+              class="project-img-elem"
+            />
+          </div>
+
+          <div class="project-item project-txt projl">
+            <div class="project-button">
+              <button class="button-proj3 button-proj">
+                <ion-icon class="project-button-icon" name="play"></ion-icon>
+              </button>
+              <p class="text-project-button">
+                Press to execute project1.script
+              </p>
+            </div>
+            <div class="autotype-one">
+              <p class="autotype-elem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                et!
+              </p>
+            </div>
+          </div>
+
+          <div class="project-item project-txt projr">
+            <div class="project-button">
+              <button class="button-proj4 button-proj">
+                <ion-icon class="project-button-icon" name="play"></ion-icon>
+              </button>
+              <p class="project-button-text">
+                Press to execute project1.script
+              </p>
+            </div>
+            <div class="autotype-one">
+              <p class="autotype-elem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+                et!
+              </p>
+            </div>
+          </div>
+
+          <div class="project-item project-img">
+            <img
+              src="/imgs/projects/Window-layout.svg"
+              class="project-img-elem"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

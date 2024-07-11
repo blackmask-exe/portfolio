@@ -1,0 +1,367 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+Colors:
+
+*/
+
+/**************************/
+/* HERO BG VIDEO */
+/**************************/
+
+body {
+  /* overflow-x: hidden; */
+  background-color: black;
+}
+
+.bghero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(imgs/hero/hero-bg.gif);
+  background-size: cover;
+  /* transform: translate(0, -3.2rem); */
+  height: 100vh;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.navigation-section {
+  padding-top: 3.2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 12.8rem;
+}
+
+.nav-logo img {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.nav-elements {
+  display: flex;
+  gap: 5rem;
+}
+
+.navitem:link,
+.navitem:visited {
+  display: inline-block;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+  border-bottom: 2px solid transparent;
+  font-weight: 600;
+}
+
+.navitem:hover,
+.navitem:active {
+  border-bottom: 2px solid #a5d8ff;
+}
+
+/**************************/
+/* HERO */
+/**************************/
+
+.hero-section {
+  font-family: "Ubuntu Mono", sans-serif;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.hero-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+
+  grid-column: 2/3;
+}
+
+.ht1 {
+}
+.ht2 {
+  margin-bottom: 0.6rem;
+  margin-top: 0.5rem;
+  color: #a5d8ff;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  font-size: 7.4rem;
+}
+
+.ht3 {
+  font-size: 2.4rem;
+}
+
+.ht4 {
+  margin-top: 6.4rem;
+  text-align: center;
+  width: 60%;
+}
+
+.hero-button {
+  background-color: #a5d8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9.6rem;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  border-radius: 999999px;
+}
+.hero-button-link {
+  color: #1971c2;
+}
+
+/**************************/
+/* PROJECTS */
+/**************************/
+
+.projects-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(imgs/hero/hero-bg.gif);
+  background-size: cover;
+  /* transform: translate(0, -3.2rem); */
+  height: 80rem;
+}
+
+.projects-heading {
+  padding-top: 3.2rem;
+  margin-bottom: 0.6rem;
+  margin-top: 0.5rem;
+  color: #a5d8ff;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  font-size: 7.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Ubuntu Mono", sans-serif;
+}
+
+.projects-z {
+  margin-top: 17.6rem;
+  row-gap: 20rem;
+}
+
+.project-img {
+  justify-self: center;
+}
+
+.project-img-elem {
+  /* border-radius: 50%; */
+  height: 25.6rem;
+  width: 25.6rem;
+}
+
+.projl {
+  justify-self: left;
+}
+
+.projr {
+  justify-self: right;
+}
+
+.project-txt {
+  height: 12.8rem;
+  width: 38.4rem;
+  background-color: black;
+  color: white;
+  align-self: center;
+
+  border: 2px white solid;
+  border-radius: 24px;
+  padding: 4.8rem;
+  font-family: monospace;
+  /* padding-left: 9.6rem;
+  padding-right: 9.6rem; */
+}
+
+.project-button {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.project-button-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.button-proj {
+  color: #1971c2;
+  background-color: black;
+  /* border: 1px #a5d8ff solid; */
+  border-radius: 5px;
+
+  border: none;
+}
+
+.button-proj:hover,
+.button-proj:active {
+  color: #1971c2;
+  background-color: black;
+  /* border: 1px #a5d8ff solid; */
+  border-radius: 5px;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.project-button-text {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.autotype-one {
+  display: none;
+}
+.autotype-one p {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/**************************/
+/* ABOUT ME */
+/**************************/
+
+.aboutme-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.048), rgba(0, 0, 0, 0.048)),
+    url(imgs/about-me/aboutme-bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 110rem;
+}
+
+.about-me-heading {
+  font-size: 6.2rem;
+  color: #033956;
+  transform: translate(0, 7.4rem);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-weight: 700;
+}
+
+.about-me-text {
+  margin-top: 14.4rem;
+  font-size: 2.4rem;
+  color: #033956;
+  font-weight: 600;
+
+  display: inline-block;
+}
+
+.intro {
+  margin-bottom: 4.8rem;
+}
+
+/**************************/
+/* ABOUT ME - SKILLS */
+/**************************/
+
+.about-skills-parent {
+  margin-top: 5rem;
+  /* padding: 1.2rem; */
+
+  row-gap: 4.8rem;
+}
+
+.about-skill-attribute {
+  font-size: 3.2rem;
+}
+
+.skill-one,
+.skill-four,
+.skill-five {
+  font-size: 6.2rem;
+}
+
+/* Text */
+.skill-two {
+  grid-column: 2/4;
+}
+
+.skill-three {
+  grid-column: 1/3;
+  justify-self: right;
+}
+
+.skill-six {
+  grid-column: 2/4;
+}
+
+/* Logos */
+
+.skill-one {
+  justify-self: center;
+}
+
+.skill-four {
+  justify-self: center;
+}
+
+.skill-five {
+  justify-self: center;
+}
